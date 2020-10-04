@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <title>Book Your Rover Now!</title>
+        <link rel="stylesheet" href="style-book.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class='navbar'>
+            <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a class='active' href='book.html'>Book Now</a></li>
+                <li><a href='about.html'>About</a></li>
+            </ul>
+        </div>
+        <br><br>
+        <h1>When are you travelling?</h1><br>
+        
+        <div class="date">
+            
+            <form id="date1">
+                <p>Departure:</p>
+                <input type="date" id='date-trip' name='depart' required>
+            </form>
+            <form id="date2">
+                <p>Arrival:</p>
+                <input type="date" id="arrival" name="arrive" required>
+            </form>
+            <button id='con_date' onclick='getdates()'>Confirm Dates</button>
+        </div>
+        <p id="demo" style='color:white'></p>
+        <br><br>
+        
+        
+
+
+
+        <h1>Select your Rover!</h1>
+        
+            <div class='flex-container'>
+                <div>
+                    <img id ='rover1' src='images/rover1.jpg' alt="rover1">
+                </div>
+                <div class="about">
+                <p style="color: white;">Model N<br><br>4 Seater<br>
+                    Mileage:400km/L of Hydrogen<br><br>
+                     Rent Now at only 300 units/day!(Additional charges not included)<br></p>
+                <button id ='one' onclick="khuljaasimsim(this.id)">Book Now!</button>
+                <div class='modal' id='myModal'>
+                    <div class='modal-content'>
+                        
+                        <p id='demo1' style='color:black'></p>
+                    </div>
+                </div>
+                <p id='demo2' style='color:white'></p>
+                </div>
+            </div>
+            <div class='flex-container'>
+                <div>
+                    <img id ='rover2' src='images/r2.jpeg' alt="rover1">
+                </div>
+                <div class="about">
+                <p style="color: white;">Model O<br><br>2 Seater<br><br>
+                    Mileage:300km/L of Hydrogen<br><br>
+                    Rent Now at only 500 units/day!(Additional charges not included)
+                </p>
+                <br>
+                <button id ='two' onclick="khuljaasimsim(this.id)">Book Now!</button>
+                </div>
+            </div>
+            <div class='flex-container'>
+                <div>
+                    <img id ='rover3' src='images/r3.jpeg' alt="rover1">
+                </div>
+                <div class="about">
+                <p style="color: white;">Model I<br><br>4 Seater<br><br>
+                    Mileage:300km/L of Hydrogen<br><br>
+                    Rent Now at only 800 units/day!(Additional charges not included)</p>
+                <button id ='three' onclick="khuljaasimsim(this.id)">Book Now!</button>
+                </div>
+            </div>
+            <div class='flex-container'>
+                <div>
+                    <img id ='rover4' src='images/r4.jpeg' alt="rover1">
+                </div>
+                <div class="about">
+                <p style="color: white;">Model C<br><br>8 Seater<br><br>
+                    Mileage:250km/L of Hydrogen<br><br>
+                    Rent Now at only 1000 units/day!(Additional charges not included)</p>
+                <button id ='four' onclick="khuljaasimsim(this.id)">Book Now!</button>
+                </div>
+            </div>
+            <div class='flex-container'>
+                <div>
+                    <img id ='rover5' src='images/r5.jpg' alt="rover1">
+                </div>
+                <div class="about">
+                <p style="color: white;">Model E<br><br>2 Seater<br><br>
+                    Mileage:200km/L of Hydrogen<br><br>
+                    Rent Now at only 1500 units/day!(Additional charges not included)
+                    
+                </p>
+                <button id ='five' onclick="khuljaasimsim(this.id)">Book Now!</button>
+                </div>
+            </div>
+            
+        
